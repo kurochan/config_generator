@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+require 'config_generator'
+
+ConfigGenerator.generate(ARGV[0], ARGV.slice(1..-1))
